@@ -26,7 +26,10 @@ mat-toolbar {
 
 }
 
-form.example input[type=text] {
+
+
+
+example-form input[type=text] {
   padding: 7px;
   font-size: 17px;
   border: 1px solid grey;
@@ -73,4 +76,14 @@ form.example button:hover {
   margin-right: 0;
   margin-left: 8px;
   color: blue;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }

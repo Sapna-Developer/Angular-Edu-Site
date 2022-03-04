@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
@@ -28,7 +28,6 @@ export class HeaderComponent {
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
-    console.log(value);
 
     return this.options.filter((option) =>
       option.toLowerCase().includes(filterValue)

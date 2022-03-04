@@ -1,6 +1,6 @@
 <div class="course">
   <div class="column" *ngFor="let course of courses">
-    <mat-grid-list cols="2" rowHeight="2:1" gutterSize="15px">
+    <mat-grid-list cols="2" rowHeight="3:1"  >
       <mat-grid-tile>
         <mat-card class="course-card">
           <mat-card-title>
@@ -13,19 +13,20 @@
             <img mat-card-sm-image [src]="course.IconUrl + ' details'" />
           </mat-card-header>
         </mat-card>
-
-        <mat-card class="course-card">
-          <mat-card-title>
-            <a [title]="course.Name + ' details'">
-              {{ course.Name }}
-            </a>
-          </mat-card-title>
-
-          <mat-card-header class="col">
-            <img mat-card-sm-image [src]="course.IconUrl + ' details'" />
-          </mat-card-header>
-        </mat-card>
       </mat-grid-tile>
+      <mat-grid-tile>
+      <mat-card class="course-card">
+        <mat-card-title>
+          <a [title]="course.Name + ' details'">
+            {{ course.Name }}
+          </a>
+        </mat-card-title>
+
+        <mat-card-header class="col">
+          <img mat-card-sm-image [src]="course.IconUrl + ' details'" />
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
     </mat-grid-list>
   </div>
 </div>

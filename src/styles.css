@@ -1,0 +1,9 @@
+/* Add application styles & imports to this file! */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-family: monospace;
+  font-size: x-large;
+}

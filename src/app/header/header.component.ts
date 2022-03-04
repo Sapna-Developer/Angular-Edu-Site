@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
@@ -16,7 +16,7 @@ export interface Course {
 })
 export class HeaderComponent {
   courseControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
+  options: string[] = ["Body Joints - Elbow", "Body Joints - Ball-Socket Joint", "Chemical Change - Heating Sugar",  "Acids-Bases - Conductivity"];
   filteredOptions: Observable<string[]>;
 
   ngOnInit() {

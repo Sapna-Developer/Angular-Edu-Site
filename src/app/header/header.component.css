@@ -27,8 +27,6 @@ mat-toolbar {
 }
 
 
-
-
 example-form input[type=text] {
   padding: 7px;
   font-size: 17px;
@@ -86,4 +84,8 @@ form.example button:hover {
 
 .example-full-width {
   width: 100%;
+}
+
+mat-label{
+  color: #f1f1f1;
 }

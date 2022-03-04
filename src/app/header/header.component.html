@@ -19,6 +19,29 @@
 </mat-form-field>
 </form>
 
-<a class="active" href="#">Subject</a>
-<a class="active" href="#">Language</a>
+<form>
+<h4>mat-select</h4>
+<mat-form-field appearance="fill">
+  <mat-label>Subject</mat-label>
+  <mat-select [(ngModel)]="selectedValue" name="subject">
+    <mat-option *ngFor="let subject of subjects" [value]="subject.value">
+      {{subject.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<p> Selected subject: {{selectedValue}} </p>
+</form>
+
+<form>
+<h4>mat-select</h4>
+<mat-form-field appearance="fill">
+  <mat-label>Language</mat-label>
+  <mat-select [(ngModel)]="selectedValue" name="language">
+    <mat-option *ngFor="let language of languages" [value]="language.value">
+      {{language.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<p> Selected language: {{selectValue}} </p>
+</form>
 </mat-toolbar>

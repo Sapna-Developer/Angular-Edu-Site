@@ -1,0 +1,76 @@
+.icon a:hover {
+  background-color: #000;
+}
+.active {
+  background-color: rgb(114, 14, 81);
+}
+.icon a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+mat-toolbar {
+  width: 100%; 
+  background-color: rgb(114, 14, 81);
+}
+.icon input[type=text] a {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+
+}
+
+form.example input[type=text] {
+  padding: 7px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  
+  width: 30%;
+  padding: 7px;
+  background: palevioletred;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+} */
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  color: blueviolet;
+}
+
+.example-full-width {
+  width: 100%;
+  color: aquamarine;
+}
+
+.example-option-img {
+  vertical-align: middle;
+  margin-right: 8px;
+  color: brown;
+}
+
+[dir='rtl'] .example-option-img {
+  margin-right: 0;
+  margin-left: 8px;
+  color: blue;
+}

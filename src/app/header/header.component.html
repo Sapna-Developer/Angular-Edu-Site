@@ -3,39 +3,21 @@
 <img src="assets/image/download.png" />
 
 <form class="example-form">
-
-<mat-form-field class="example-full-width" >
-
-  <mat-label>Course</mat-label>
-
-  <input matInput
-         aria-label="Course"
-         [matAutocomplete]="auto"
-         [formControl]="courseCtrl">
-
-  <mat-autocomplete #auto="matAutocomplete">
-
-  <mat-option *ngFor="let course of filteredCourses | async" [value]="course.Name">
-
-  <img class="example-option-img" aria-hidden [src]="course.IconUrl" height="25">
-  <span>{{course.Name}}</span> |
-  <small>Version: {{course.Version}}</small>
-  
-  </mat-option>
-
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Number</mat-label>
+  <input type="text"
+         placeholder="Pick one"
+         aria-label="Number"
+         matInput
+         [formControl]="courseCtrl"
+         [matAutocomplete]="auto">
+  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+    <mat-option *ngFor="let option of filteredCourses | async" [value]="option">
+      {{option}}
+    </mat-option>
   </mat-autocomplete>
-
 </mat-form-field>
-
-<br>
-
-<mat-slide-toggle
-  [checked]="courseCtrl.disabled"
-  (change)="courseCtrl.disabled ? courseCtrl.enable() : courseCtrl.disable()">
-  Disable Input?
-</mat-slide-toggle>
 </form>
-
 
 <a class="active" href="#">Subject</a>
 <a class="active" href="#">Language</a>
